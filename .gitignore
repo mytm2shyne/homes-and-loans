@@ -1,0 +1,15 @@
+# Node & pnpm
+node_modules/
+.pnpm/
+.pnpm-debug.log*
+pnpm-lock.yaml
+
+# Build / cache
+.next/
+dist/
+.turbo/
+*.log
+
+# Environment files
+.env*
+!.env.example
