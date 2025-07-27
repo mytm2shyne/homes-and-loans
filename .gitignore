@@ -2,7 +2,6 @@
 node_modules/
 .pnpm/
 .pnpm-debug.log*
-pnpm-lock.yaml
 
 # Build / cache
 .next/

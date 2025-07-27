@@ -7,11 +7,11 @@ import type { Listing } from '@hol/idx/components/ListingCard';
 
 // ⚠️  Replace these mocks later with real data fetched from your DB/API
 const all: Listing[] = [
-  { id:'1',slug:'123-main-st',address:'123 Main St',city:'Santa Clarita',
+  { id:'1',slug:'123-main-st',address:'123 Main St',city:'Santa Clarita',state: 'CA',
     price:750000,beds:3,baths:2,sqft:1780,photoUrl:'/placeholder.jpg' },
-  { id:'2',slug:'456-oak-ave',address:'456 Oak Ave',city:'Canyon Country',
+  { id:'2',slug:'456-oak-ave',address:'456 Oak Ave',city:'Canyon Country',state: 'CA',
     price:645000,beds:4,baths:3,sqft:2120,photoUrl:'/placeholder.jpg' },
-  { id:'3',slug:'789-pine-rd',address:'789 Pine Rd',city:'Valencia',
+  { id:'3',slug:'789-pine-rd',address:'789 Pine Rd',city:'Valencia',state: 'CA',
     price:915000,beds:5,baths:4,sqft:3100,photoUrl:'/placeholder.jpg' }
 ];
 

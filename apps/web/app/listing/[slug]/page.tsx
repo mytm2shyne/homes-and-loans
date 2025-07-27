@@ -2,9 +2,9 @@ import { notFound } from 'next/navigation';
 import { Listing } from '@hol/idx/components/ListingCard';
 
 const mockListings: Listing[] = [
-  { id:'1',slug:'123-main-st',address:'123 Main St',city:'Santa Clarita',
+  { id:'1',slug:'123-main-st',address:'123 Main St',city:'Santa Clarita',state: 'CA',
     price:750000,beds:3,baths:2,sqft:1780,photoUrl:'/placeholder.jpg' },
-  { id:'2',slug:'456-oak-ave',address:'456 Oak Ave',city:'Canyon Country',
+  { id:'2',slug:'456-oak-ave',address:'456 Oak Ave',city:'Canyon Country',state: 'CA',
     price:645000,beds:4,baths:3,sqft:2120,photoUrl:'/placeholder.jpg' }
 ];
 
