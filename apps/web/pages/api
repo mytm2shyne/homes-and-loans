@@ -1,0 +1,6 @@
+mkdir apps\web\pages\api
+(
+echo export default function handler(req, res^) { 
+echo   res.status(200).json({ status: 'ok' }); 
+echo } 
+) > apps\web\pages\api\health.ts
