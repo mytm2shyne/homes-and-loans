@@ -13,16 +13,22 @@ export interface Listing {
   sqft: number;
   photoUrl: string;
 }
-
-export const ListingCard: React.FC<{ listing: Listing }> = ({ listing }) => (
-  <article style={{ border: '1px solid #ddd', padding: 12, borderRadius: 8 }}>
-    <h3>{listing.address}</h3>
+export const ListingCard = (l: Listing) => (
+  <article className="border rounded-xl shadow p-4">
+    {l.photoUrl && (
+      <Image
+        src={l.photoUrl}
+        alt={l.address}
+        width={400}
+        height={300}
+        className="rounded-lg mb-2 object-cover"
+      />
+    )}
+    <h3 className="font-semibold">{l.address}</h3>
+    <p>{[l.city, l.state].filter(Boolean).join(', ')}</p>
+    <p className="text-teal-600 font-bold">${l.price.toLocaleString()}</p>
     <p>
-      {listing.city}, {listing.state}
-    </p>
-    <p>
-      ${listing.price.toLocaleString()} &middot; {listing.beds} bd&nbsp;|&nbsp;
-      {listing.baths} ba&nbsp;|&nbsp;{listing.sqft.toLocaleString()} sq ft
+      {l.beds} bd · {l.baths} ba · {l.sqft.toLocaleString()} sqft
     </p>
   </article>
 );
